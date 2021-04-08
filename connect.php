@@ -2,9 +2,9 @@
 try {
     //try to connect to database 
     //data source name 
-    $dsn = 'mysql:host=localhost;dbname=COMP1006_Winter2021Sem';
+    $dsn = 'mysql:host=localhost;dbname=database';
     $username = 'root'; 
-    $password = 'root';
+    $password = '';
     //create instance of PDO object
     $db = new PDO($dsn,$username, $password); 
     //echo 'Connected successfully! Whoo hoo!!!!'; 

@@ -7,8 +7,10 @@ $ok = true;
 
 // grab the information from the form and also validate 
 
-$username = trim(filter_input(INPUT_POST, 'username')); 
-$password = trim(filter_input(INPUT_POST, 'password'));
+$username = trim(filter_input(INPUT_POST, 'username', FILTER_SANITIZE_STRING));
+$password = trim(filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING));
+
+// Validaiton
 
 if(empty($username)) {
     echo "<p> Please provide your username! </p>"; 
